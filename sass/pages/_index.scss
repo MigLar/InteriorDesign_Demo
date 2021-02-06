@@ -10,15 +10,7 @@
   justify-content: center;
 
   position: relative;
-  /*   top: 0;
-  left: 0; */
 
-  background-color: rgb(255, 221, 169);
-  background-size: cover;
-  background-position: center;
-  color: white;
-
-  animation: intro 10s ease-in-out forwards;
-
-  transition: all;
+  background-color: $color-almond;
+  color: $color-white;
 }
