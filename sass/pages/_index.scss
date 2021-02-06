@@ -1,0 +1,24 @@
+.intro {
+  height: 100vh;
+  width: 100vw;
+
+  padding: 2rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  position: relative;
+  /*   top: 0;
+  left: 0; */
+
+  background-color: rgb(255, 221, 169);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  animation: intro 10s ease-in-out forwards;
+
+  transition: all;
+}

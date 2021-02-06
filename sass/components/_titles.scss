@@ -1,0 +1,22 @@
+.title {
+  &--intro {
+    font-size: 50rem;
+    line-height: 1;
+
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    color: inherit;
+
+    transition: all 1s;
+
+    &-1 {
+      transform: translateY(-150%);
+      z-index: 1000;
+    }
+    &-2 {
+      transform: translateY(150%);
+      z-index: 2000;
+    }
+  }
+}
