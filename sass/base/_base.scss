@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: fit-content;
+
+  font-size: 1.6rem;
+  font-family: 'Times New Roman', Times, serif;
+
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 1.5s;
+}
