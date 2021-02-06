@@ -3,6 +3,7 @@ function main() {
   const introTitle1 = document.getElementById('intro-title-1');
   const introTitle2 = document.getElementById('intro-title-2');
   const nextSection = document.getElementById('next-section');
+  const prevSection = document.getElementById('previous-section');
   const container = document.getElementById('main');
 
   const urlArray = [
@@ -12,6 +13,7 @@ function main() {
   ];
 
   var adder = 0;
+  var pageCounter = 0;
 
   setTimeout(() => {
     introTitle1.style.transform = 'translateY(0)';
@@ -28,8 +30,21 @@ function main() {
   }, 2500);
 
   nextSection.addEventListener('click', (e) => {
-    console.log(container.innerHTML);
-    container.style.transform = 'translateX(-100vw)';
+    pageCounter++;
+    container.style.transform = `translateX(${-100 * pageCounter}vw)`;
+    console.log(`${pageCounter * -100}`);
+  });
+
+  prevSection.addEventListener('click', (e) => {
+    if (pageCounter > 0) {
+      pageCounter--;
+      container.style.transform = `translateX(${-100 * pageCounter}vw)`;
+      console.log(`${pageCounter * -100}`);
+    }
+  });
+
+  container.addEventListener('scroll', () => {
+    console.log('scrolled');
   });
 }
 

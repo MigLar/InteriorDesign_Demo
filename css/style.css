@@ -33,9 +33,9 @@ a {
   justify-content: center;
   top: 50%;
   right: 5%;
-  font-size: 10rem;
-  height: 10rem;
-  width: 10rem;
+  font-size: 15rem;
+  height: 15rem;
+  width: 15rem;
   border: 2px dashed #fff;
   border-radius: 50%;
   z-index: 1000; }
